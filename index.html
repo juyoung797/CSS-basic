@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- 태그 선택자 / 클래스 선택자 / 아이디 선택자 -->
+    <h1>heading</h1>
+    <p>Paragraph</p>
+    <ul>
+        <li>Coffee</li>
+        <li id="green-text">Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p class="blue-text">class name : blue-text</p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eveniet quod rem aut quam minima pariatur provident quo blanditiis nisi dignissimos nulla saepe rerum, suscipit eligendi ut tenetur enim aperiam.
+    </p>
+
+    <!-- 결합 선택자 -->
+    <div class="start">
+        <span>Inline Text 1</span>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <div>
+            <p>
+                <span>Paragraph 3</span>
+            </p>
+            <span>Inline Text 3</span>
+        </div>
+        <p class="end">Paragraph 4</p>
+    </div>
+
+    <!-- 클래스 중첩 -->
+    <p class="text-center">Center</p>
+    <p class="text-center text-large">Center Large</p>
+    <p class="text-center text-large text-blue">Center Large Blue</p>
+
+    <!-- 전체 선택자 -->
+    <input type="text" value="input text box">
+    <button>Sign-in</button>
+    <div class="frame">
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+    </div>
 </body>
 </html>

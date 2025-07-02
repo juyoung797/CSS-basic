@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 태그 선택자 / 클래스 선택자 / 아이디 선택자 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+h1 {
+    color: red;
+}
+p {
+    color: grey;
+}
+ul li {
+    color: pink;
+}
+.blue-text {
+    color: blue;
+}
+#green-text {
+    color: green;
+}
+
+/* 결합 선택자 */
+/* div span {
+    color: red;
+}
+div > span {
+    color: red;
+} */
+.start div p, 
+.end {
+    color: rgb(212, 43, 218);
+}
+
+/* 클래스 중첩 */
+p {
+    border: 1px solid #000;
+}
+.text-center {
+    text-align: center;
+}
+.text-large {
+    font-size: 2em;
+}
+.text-blue {
+    color: blue;
+}
+
+/* 전체 선택자 */
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.frame {
+    border: 1px solid #000;
+    width: 300px;
+    margin-top: 50px;
+}
+.frame div {
+    border: 1px solid red;
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+/* 태그와 함께 사용하는 선택자 */
+.about {
+    color: red;
+}
+
+section.about {
+    color: red;
+}
