@@ -57,6 +57,7 @@ p {
     border: 1px solid #000;
     width: 300px;
     margin-top: 50px;
+    overflow: hidden;
 }
 .frame div {
     border: 1px solid red;
@@ -73,3 +74,20 @@ p {
 section.about {
     color: red;
 }
+
+/* 인접 선택자*/
+.start + p {
+    border-color: aqua;
+}
+
+/* 형제 선택자 */
+.start ~ p {
+    background-color: blanchedalmond;
+}
+
+/* 인접, 형제 선택자 함께 사용하기 (input) */
+input[type=radio]:checked ~ span {
+    font-weight: bold;
+    color: red;
+}
+
